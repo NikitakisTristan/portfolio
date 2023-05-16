@@ -19,4 +19,13 @@ const socials = [
   }
 ]
 </script>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+</style>
