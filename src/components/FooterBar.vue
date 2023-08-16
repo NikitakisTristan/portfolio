@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <a v-for="social in socials" :href="social.to" target="_blank">
+    <a v-for="social in socials" :key="social.name" :href="social.to" target="_blank">
       <font-awesome-icon id="social" :icon="social.icon" />
     </a>
   </footer>
@@ -32,7 +32,7 @@ const socials: Social[] = [
 <style lang="scss" scoped>
 footer {
   position: fixed;
-  bottom: 5px;
+  bottom: 0px;
   left: 0;
   right: 0;
   display: flex;

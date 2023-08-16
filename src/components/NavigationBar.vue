@@ -2,7 +2,9 @@
   <div id="nav">
     <h1>Tristan Nikitakis</h1>
     <div style="width: 300px">
-      <RouterLink v-for="route in navLinks" :to="route.path"> {{ route.name }}</RouterLink>
+      <RouterLink v-for="route in navLinks" :to="route.path" :key="route.name">
+        {{ route.name }}</RouterLink
+      >
     </div>
   </div>
 </template>
@@ -22,6 +24,9 @@ const navLinks = router
   top: 0;
   right: 20px;
   left: 20px;
+  .router-link-active {
+    color: blue;
+  }
 }
 div {
   display: flex;
